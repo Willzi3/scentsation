@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
-/dist
 
 
 # local env files
@@ -21,3 +20,10 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# clevercloud
+
+DB_HOST => bmjv8kakyofflpwas4xd-mysql.services.clever-cloud.com
+DB_USER => uew7gfo5cww90sye
+DB_PASS => 6RUY3rJ8QVCBcv7pnaU9
+DB_NAME => bmjv8kakyofflpwas4xd
