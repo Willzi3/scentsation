@@ -1,5 +1,7 @@
 <template>
   <div class="container">
+    <h1>Register</h1>
+    <p>Please </p>
     <form class="form">
         <input class="form-input" type="text" name="email" placeholder="Email:" />
         <input class="form-input" type="password" name="password" placeholder="Password" />

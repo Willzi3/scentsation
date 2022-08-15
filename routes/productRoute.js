@@ -15,13 +15,16 @@ router.get("/", (req, res) => {
 });
 router.get("/:id", (req, res) => {
     try {
-        con.query("SELECT * FROM products", (err, result) => {
-            if (err) throw err;
-            res.send(result);
-        });
+        con.query(
+            `SELECT * FROM products WHERE product_id='${req.params.id}'`,
+            (err, result) => {
+                if (err) throw err;
+                res.send(result);
+            }
+        );
     } catch (error) {
         console.log(error);
-        res.status(400).send(error)
+        res.status(400).send(error);
     }
 });
 

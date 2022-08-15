@@ -34,6 +34,11 @@ const routes = [
     path: '/forgot-psw',
     name: 'Forgot',
     component: () => import('../views/Forgot.vue')
+  },
+  {
+    path: '/admin',
+    name: 'Admin',
+    component: () => import('../views/Admin.vue')
   }
 
 ]
